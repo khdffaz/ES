@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Создание кнопки jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <form>
+            <div class="article">
+                    <h3>Привет!</h3>
+                    <p>Меня зовут Повторятель Издевайкин. Я люблю повторять за всеми.</p>
+                    <p>Что бы ты дальше не написал - всё повторю за тобой!</p>
+                </div>
+            <form name="search">
+                <input type="text" name="key" placeholder="Пиши сюда..."></input>
+                <input type="button" value="Готово" onclick="printForm()">
+    </form>
+    <div id="printBlock"></div>
+    <script>
+        function printForm(){
+        var jq=$('#key').val();
+        $('#').append(jq);
+    }
+    </script>
+</body>
+</html>
